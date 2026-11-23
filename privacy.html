@@ -5,9 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RoadFlow iOS — Politika privatnosti / Privacy Policy</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.65; color: #1d1d1f; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.65;
+      color: #1d1d1f;
+    }
     h1 { font-size: 28px; }
-    h2 { margin-top: 32px; border-bottom: 1px solid #e5e5ea; padding-bottom: 6px; }
+    h2 {
+      margin-top: 32px;
+      border-bottom: 1px solid #e5e5ea;
+      padding-bottom: 6px;
+    }
     h3 { margin-top: 20px; }
     a { color: #0066cc; }
   </style>
@@ -17,58 +28,148 @@
   <p><a href="./index.html">← Nazad na stranicu podrške / Back to Support</a></p>
 
   <h2>🇧🇦 BOSANSKI</h2>
+  <p><strong>Datum stupanja na snagu:</strong> 23. novembar 2026.</p>
+
   <h3>1. Uvod</h3>
   <p>Ova Politika privatnosti objašnjava kako mobilna aplikacija <strong>RoadFlow</strong> („Aplikacija“), koju razvija Amel Kolasević („mi“, „nas“, „Razvojni tim“), prikuplja, koristi, čuva i štiti podatke kada koristite Aplikaciju na iOS uređajima. Korištenjem Aplikacije prihvatate praksu opisanu u ovoj Politici privatnosti.</p>
   <p>Kontakt: <a href="mailto:amel.kolasevic16@gmail.com">amel.kolasevic16@gmail.com</a></p>
 
-  <h3>2. Koje podatke prikupljamo</h3>
+  <h3>2. Lokacija i funkcije vožnje</h3>
   <p>RoadFlow ne zahtijeva registraciju niti kreiranje korisničkog naloga za korištenje Aplikacije.</p>
+  <p>Aplikacija može tražiti pristup preciznoj lokaciji uređaja radi:</p>
   <ul>
-    <li><strong>Precizna lokacija (GPS):</strong> Koristi se isključivo za prikaz vaše pozicije na mapi, praćenje kretanja tokom aktivne vožnje i pravovremena upozorenja o blizini radara.</li>
-    <li><strong>Lokacija u pozadini:</strong> Koristi se samo ako je eksplicitno odobrite u postavkama iOS uređaja, kako biste primali zvučna upozorenja o radarima dok je ekran isključen ili aplikacija u pozadini. Podaci o lokaciji obrađuju se lokalno na uređaju i ne pohranjuju se na našim serverima.</li>
-    <li><strong>Podaci pohranjeni lokalno:</strong> Odabrani kanton i grad, tema aplikacije, postavke zvuka i obavještenja te keširani podaci o radarima čuvaju se isključivo na vašem uređaju.</li>
-    <li><strong>Analitika i tehnički podaci:</strong> Aplikacija koristi <strong>Firebase Analytics (Google)</strong> za prikupljanje anonimne statistike korištenja (otvaranje ekrana, odabir kantona, pokretanje praćenja) i osnovnih tehničkih podataka o stabilnosti. Ovi podaci nisu povezani sa vašim identitetom i ne koriste se za oglašavanje niti praćenje kroz druge aplikacije.</li>
+    <li>prikaza položaja korisnika na mapi;</li>
+    <li>praćenja kretanja tokom aktivnog praćenja vožnje;</li>
+    <li>izračunavanja udaljenosti od radarskih zona;</li>
+    <li>prikaza trase i smjera vožnje;</li>
+    <li>zvučnih, govorno-sintetizovanih i vibracionih upozorenja o radarima.</li>
+  </ul>
+  <p>Lokacija u pozadini koristi se samo kada korisnik pokrene funkciju <strong>Aktivno praćenje</strong> i odobri odgovarajuću iOS dozvolu. Korisnik može zaustaviti praćenje unutar aplikacije ili povući dozvole u Postavkama iOS uređaja.</p>
+  <p>Precizna lokacija obrađuje se za funkcionalnost aplikacije. Podaci o lokaciji ne prodaju se i ne koriste za oglašavanje.</p>
+
+  <h3>3. Podaci pohranjeni lokalno</h3>
+  <p>Aplikacija lokalno čuva:</p>
+  <ul>
+    <li>odabrani kanton i gradove;</li>
+    <li>radijus obavještenja;</li>
+    <li>jezik govora;</li>
+    <li>postavke vibracije i zvučnih upozorenja;</li>
+    <li>temu aplikacije;</li>
+    <li>status obavještenja i odabrane postavke;</li>
+    <li>keširane podatke o radarskim kontrolama i informacijama o kaznama.</li>
+  </ul>
+  <p>Ovi podaci pohranjuju se lokalno na iOS uređaju i uklanjaju se deinstaliranjem aplikacije.</p>
+
+  <h3>4. Analitički i tehnički podaci</h3>
+  <p>Aplikacija koristi <strong>Firebase Analytics (Google)</strong> za prikupljanje događaja o korištenju aplikacije.</p>
+  <p>Analitika može uključivati:</p>
+  <ul>
+    <li>otvaranje ekrana;</li>
+    <li>odabir kantona i grada;</li>
+    <li>promjenu radijusa upozorenja;</li>
+    <li>pokretanje i završavanje aktivnog praćenja;</li>
+    <li>otvaranje sekcija sa informacijama o kaznama;</li>
+    <li>tehničke podatke o uređaju i interakcijama u aplikaciji.</li>
+  </ul>
+  <p>Precizne GPS koordinate korisnika nisu namjerno uključene u Firebase analitičke događaje. Analitički podaci ne koriste se za oglašavanje, automatizirane odluke ili praćenje korisnika između aplikacija i web-stranica trećih strana.</p>
+
+  <h3>5. Obavještenja</h3>
+  <p>Aplikacija može slati lokalna obavještenja o nadolazećim radarskim kontrolama u odabranim gradovima. Slanje obavještenja zahtijeva odobrenje korisnika u iOS sistemu. Obavještenja se mogu isključiti u sistemskim Postavkama ili unutar aplikacije.</p>
+  <p>Aplikacija ne koristi podatke o lokaciji za slanje marketinških ili reklamnih obavještenja.</p>
+
+  <h3>6. Vanjski servisi</h3>
+  <ul>
+    <li><strong>Apple MapKit i CoreLocation</strong> — prikaz mape, lokacije, trase i obrada GPS lokacije (<a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>).</li>
+    <li><strong>Firebase Analytics i Google servisi</strong> — anonimna statistika korištenja i analitički događaji (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</li>
+    <li><strong>Javni serveri i web izvori</strong> — preuzimanje podataka o radarima i saobraćajnim propisima putem šifrovanih HTTPS zahtjeva. Aplikacija ne šalje ime, adresu, e-mail ili broj telefona na ove servere.</li>
   </ul>
 
-  <h3>3. Vanjski servisi</h3>
-  <ul>
-    <li><strong>Apple MapKit &amp; CoreLocation</strong> — Prikaz mape i obrada GPS lokacije na uređaju (<a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>).</li>
-    <li><strong>Firebase Realtime Database &amp; Firebase Analytics (Google)</strong> — Preuzimanje podataka o radarima i anonimna statistika korištenja (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</li>
-    <li><strong>Javni web izvori</strong> — Preuzimanje javno dostupnih rasporeda radara putem tehničkih HTTPS zahtjeva bez slanja ličnih podataka.</li>
-  </ul>
+  <h3>7. Dozvole, sigurnost i korisnički izbor</h3>
+  <p>Dozvolu za lokaciju i obavještenja možete u svakom trenutku promijeniti ili opozvati u iOS Postavkama uređaja (<em>Settings → RoadFlow</em>). Sva mrežna komunikacija odvija se putem šifrovanog HTTPS protokola.</p>
+  <p>Bez obzira na prethodno dodijeljene sistemske dozvole, korisnik može isključiti vibraciju, govor, push obavještenja i aktivno praćenje unutar aplikacije.</p>
 
-  <h3>4. Dozvole, sigurnost i vaša prava</h3>
-  <p>Dozvolu za pristup lokaciji možete u svakom trenutku promijeniti ili opozvati u postavkama vašeg iPhone uređaja (<em>Settings → RoadFlow</em>). Sva mrežna komunikacija odvija se putem šifrovanog HTTPS protokola, a lokalni podaci se brišu deinstaliranjem Aplikacije.</p>
+  <h3>8. Dijeljenje i prodaja podataka</h3>
+  <p>RoadFlow ne prodaje podatke o lokaciji ili analitici. Podaci se ne prodaju oglašivačkim mrežama niti se koriste za praćenje korisnika na drugim aplikacijama ili web-stranicama.</p>
+  <p>Podaci koje obrađuju Apple i Google podliježu njihovim zasebnim politikama privatnosti i odredbama zaštite podataka.</p>
 
-  <h3>5. Djeca i kontakt</h3>
-  <p>RoadFlow je namijenjen vozačima i nije namijenjen djeci mlađoj od 13 godina. Za sva pitanja kontaktirajte: <strong>Amel Kolasević</strong> (<a href="mailto:amel.kolasevic16@gmail.com">amel.kolasevic16@gmail.com</a>).</p>
+  <h3>9. Zadržavanje podataka</h3>
+  <p>Lokalne postavke i keširani podaci čuvaju se na uređaju sve dok ih korisnik ne obriše, promijeni ili ukloni deinstaliranjem aplikacije.</p>
+  <p>Analitički podaci čuvaju se i obrađuju u skladu sa konfiguracijom Firebase Analytics i odredbama Google usluga.</p>
+
+  <h3>10. Djeca i kontakt</h3>
+  <p>RoadFlow je namijenjen vozačima i nije namijenjen djeci mlađoj od 13 godina. Za sva pitanja ili zahtjeve vezane za privatnost kontaktirajte: <strong>Amel Kolasević</strong> (<a href="mailto:amel.kolasevic16@gmail.com">amel.kolasevic16@gmail.com</a>).</p>
 
   <h2>🇬🇧 ENGLISH</h2>
+  <p><strong>Effective date:</strong> November 23, 2026.</p>
+
   <h3>1. Introduction</h3>
-  <p>This Privacy Policy explains how the <strong>RoadFlow</strong> mobile application ("App"), developed by Amel Kolasević ("we", "us", "Developer"), collects, uses, stores, and protects information when you use the App on iOS devices. By using the App, you agree to the practices described in this Privacy Policy.</p>
+  <p>This Privacy Policy explains how the <strong>RoadFlow</strong> mobile application (“App”), developed by Amel Kolasević (“we”, “us”, “Developer”), collects, uses, stores, and protects information when you use the App on iOS devices. By using the App, you agree to the practices described in this Privacy Policy.</p>
   <p>Contact: <a href="mailto:amel.kolasevic16@gmail.com">amel.kolasevic16@gmail.com</a></p>
 
-  <h3>2. Information We Collect</h3>
+  <h3>2. Location and Driving Features</h3>
   <p>RoadFlow does not require account registration or sign-in to use the App.</p>
+  <p>The App may request access to the device’s precise location to:</p>
   <ul>
-    <li><strong>Precise Location (GPS):</strong> Used solely to display your position on the map, track movement during active driving sessions, and deliver timely speed camera alerts.</li>
-    <li><strong>Background Location:</strong> Used only if explicitly granted in your iOS device settings to provide audio alerts while the screen is locked or the App is in the background. Location data is processed locally on your device in real time and is never stored on our servers.</li>
-    <li><strong>Data Stored Locally on Device:</strong> Selected canton and city, theme preference, audio/alert settings, and cached radar data remain solely on your device until you uninstall the App.</li>
-    <li><strong>Analytics and Technical Data:</strong> The App uses <strong>Firebase Analytics (Google)</strong> to collect anonymous usage statistics (screen views, canton selection, active tracking events) and basic technical diagnostics. This data is not linked to your personal identity and is never used for advertising or cross-app tracking.</li>
+    <li>display the user’s position on the map;</li>
+    <li>track movement during active driving tracking;</li>
+    <li>calculate distance to radar zones;</li>
+    <li>display routes and driving direction;</li>
+    <li>provide audible, speech, and vibration alerts for speed cameras.</li>
+  </ul>
+  <p>Background location is used only when the user starts <strong>Active Tracking</strong> and grants the applicable iOS permission. The user can stop tracking inside the App or revoke permissions in iOS Settings.</p>
+  <p>Precise location is processed for application functionality. Location data is not sold or used for advertising.</p>
+
+  <h3>3. Data Stored Locally</h3>
+  <p>The App stores the following data locally:</p>
+  <ul>
+    <li>selected canton and cities;</li>
+    <li>alert radius;</li>
+    <li>speech language;</li>
+    <li>vibration and sound alert settings;</li>
+    <li>app theme;</li>
+    <li>notification status and selected preferences;</li>
+    <li>cached radar and traffic fine information.</li>
+  </ul>
+  <p>This information is stored locally on the iOS device and is removed when the App is deleted.</p>
+
+  <h3>4. Analytics and Technical Data</h3>
+  <p>The App uses <strong>Firebase Analytics (Google)</strong> to collect events about application usage.</p>
+  <p>Analytics may include:</p>
+  <ul>
+    <li>screen views;</li>
+    <li>canton and city selections;</li>
+    <li>alert radius changes;</li>
+    <li>active tracking starts and stops;</li>
+    <li>opening of traffic fine sections;</li>
+    <li>technical data about the device and interactions within the App.</li>
+  </ul>
+  <p>Precise GPS coordinates are not intentionally included in Firebase analytics events. Analytics data is not used for advertising, automated decisions, or cross-app and cross-site tracking.</p>
+
+  <h3>5. Notifications</h3>
+  <p>The App may send local notifications about upcoming radar checks in selected cities. Notification delivery requires the user’s permission in iOS. Notifications can be disabled in iOS Settings or within the App.</p>
+  <p>The App does not use location data for marketing or advertising notifications.</p>
+
+  <h3>6. Third-Party Services</h3>
+  <ul>
+    <li><strong>Apple MapKit and CoreLocation</strong> — map, location, route, and GPS processing (<a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>).</li>
+    <li><strong>Firebase Analytics and Google services</strong> — anonymous usage statistics and analytics events (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</li>
+    <li><strong>Public servers and web sources</strong> — downloading radar and traffic law data through encrypted HTTPS requests. The App does not send names, addresses, email addresses, or telephone numbers to these servers.</li>
   </ul>
 
-  <h3>3. Third-Party Services</h3>
-  <ul>
-    <li><strong>Apple MapKit &amp; CoreLocation</strong> — Map rendering and on-device GPS processing (<a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>).</li>
-    <li><strong>Firebase Realtime Database &amp; Firebase Analytics (Google)</strong> — Fetching radar coordinates and anonymous usage analytics (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</li>
-    <li><strong>Public Web Sources</strong> — Fetching publicly available radar schedules via standard HTTPS requests without transmitting personal data.</li>
-  </ul>
+  <h3>7. Permissions, Security &amp; User Choices</h3>
+  <p>You can change or revoke location and notification permissions at any time in iOS device Settings (<em>Settings → RoadFlow</em>). All network communication uses encrypted HTTPS connections.</p>
+  <p>Users can disable vibration, speech, push notifications, and active tracking within the App.</p>
 
-  <h3>4. Permissions, Security &amp; Your Rights</h3>
-  <p>You can modify or revoke Location permission at any time in your iPhone settings (<em>Settings → RoadFlow</em>). All network requests use encrypted HTTPS connections, and local data is permanently removed when you uninstall the App.</p>
+  <h3>8. Data Sharing and Sale</h3>
+  <p>RoadFlow does not sell location or analytics data. Data is not sold to advertising networks or used to track users across other applications or websites.</p>
+  <p>Data processed by Apple or Google is subject to their respective privacy policies and data protection terms.</p>
 
-  <h3>5. Children &amp; Contact</h3>
-  <p>RoadFlow is intended for drivers and is not directed to children under the age of 13. For any privacy inquiries or support requests, please contact: <strong>Amel Kolasević</strong> (<a href="mailto:amel.kolasevic16@gmail.com">amel.kolasevic16@gmail.com</a>).</p>
+  <h3>9. Data Retention</h3>
+  <p>Local preferences and cached data remain on the device until deleted, changed, or removed by deleting the App.</p>
+  <p>Analytics data is retained and processed according to Firebase Analytics configuration and Google service terms.</p>
+
+  <h3>10. Children &amp; Contact</h3>
+  <p>RoadFlow is intended for drivers and is not directed to children under the age of 13. For privacy questions or requests, contact: <strong>Amel Kolasević</strong> (<a href="mailto:amel.kolasevic16@gmail.com">amel.kolasevic16@gmail.com</a>).</p>
 
   <p style="color:#6e6e73; font-size:14px; margin-top:40px;">© 2026 Amel Kolasević · RoadFlow (com.amko.roadflow)</p>
 </body>
